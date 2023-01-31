@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 body {
-    background-color: rgb(65, 78, 78);
+    background-color: rgb(61, 73, 73);
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -33,7 +33,7 @@ nav a:hover {
 main {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     align-items: center;
 }
 main h1 {
@@ -59,10 +59,17 @@ li  {
 .gallery {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .gallery img {
     width: 15rem;
-    height: 10rem;
+    height: 15rem;
     object-fit: cover;
     object-position: top;
+    transition: .3s all ease-in-out;
+}
+.gallery img:hover {
+    width: 30rem;
+    height: 30rem;
 }
